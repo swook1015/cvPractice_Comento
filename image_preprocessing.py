@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 from datasets import load_dataset
 import os
+import random
 
 # 1. 저장 폴더 생성
 os.makedirs('preprocessed_samples', exist_ok=True)
@@ -17,17 +18,26 @@ for i in range(1, 6):
     
     # [전처리 1] 크기 조정 (224x224)
     resized = cv2.resize(image, (224, 224))
+
+    # [전처리 2]
+    if random.random() > 0.5:
+        resized = cv2.flip(resized, 1)
+    angle = random.uniform(-15, 15)
+    matrix = cv2.getRotationMatrix2D((112, 112), angle, 1.0)
+    resized = cv2.warpAffine(resized, matrix, (224, 224))
     
-    # [전처리 2] 색상 변환 (Grayscale)
+    # [전처리 3] 색상 변환
     gray = cv2.cvtColor(resized, cv2.COLOR_BGR2GRAY)
     
-    # [전처리 3] 노이즈 제거 (Gaussian Blur)
+    # [전처리 4] 노이즈 제거
     blurred = cv2.GaussianBlur(gray, (5, 5), 0)
-    
-    # [전처리 4] Normalize (0~255를 0~1 사이로 정규화)
+     
+    # [전처리 5] 정규화
     normalized = blurred / 255.0
     
-    # 이미지 저장 (정규화된 데이터는 시각화를 위해 다시 255를 곱해 저장)
+    # 이미지 저장
     final_image = (normalized * 255).astype(np.uint8)
     cv2.imwrite(f'preprocessed_samples/sample_{i}.png', final_image)
-    print(f"[{i}/5] 전처리 완료")
+    print(f"[{i}/5] 전처리 및 증강 완료")
+
+    
