@@ -2,7 +2,7 @@
 import cv2
 import numpy as np
 # 이미지 로드
-image = cv2.imread('DM_sample.jpg')
+image = cv2.imread('DM_sample2.jpg')
 # 그레이스케일 변환
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 # Depth Map 생성
@@ -13,6 +13,8 @@ X, Y = np.meshgrid(np.arange(w), np.arange(h))
 Z = gray.astype(np.float32) # Depth 값을 Z 축으로 사용
 # 3D 좌표 생성
 points_3d = np.dstack((X, Y, Z))
+# 결과 이미지 저장 (추가)
+cv2.imwrite('result2.jpg', depth_map)
 # 결과 출력
 cv2.imshow('Depth Map', depth_map)
 cv2.waitKey(0)
