@@ -10,3 +10,11 @@
    따라서, 0-1사이의 값으로 정규화 하여 최적의 정답을 더욱 빠르게 도달할 수 있게 적용
 6. 전처리 된 이미지를 "preprocessed_samples" 파일에 저장.
 ----------------------------------------------------------------------------------------
+#2주차 과정 설명
+[구조 설계]
+Load Step: data 폴더 파일 안에 있는 전체 이미지 파일 읽기
+Process Step: 흑백 변환 및 Depth Map 생성 (핵심 로직)
+Transform Step: X, Y, Z 좌표를 결합하여 3D 포인트 클라우드 생성
+Save Step: 결과 이미지 및 .npy 파일 저장
+
+<img width="1241" height="670" alt="image" src="https://github.com/user-attachments/assets/1b26fc91-bd6f-40d5-a911-cf6539c22a71" />
