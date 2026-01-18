@@ -17,9 +17,9 @@ if ims:
         depth_map = cv2.applyColorMap(gray, cv2.COLORMAP_JET)
 
         base_name = os.path.basename(i)
-        save_name = f'output/cvt_{base_name}'
+        save_path = f'output/cvt_{base_name}'
 
-        cv2.imwrite(save_name, depth_map) # 결과 이미지 저장 (추가)
+        cv2.imwrite(save_path, depth_map) # 결과 이미지 저장 (추가)
         cv2.imshow(f'Original Image_{base_name}', image)
         cv2.imshow(f'Depth Map_{base_name}', depth_map)
     cv2.waitKey(0)
