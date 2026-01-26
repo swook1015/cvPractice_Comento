@@ -1,0 +1,9 @@
+# 데이터셋 정보 설정 
+train: ./train/images # 학습 데이터 경로
+val: ./valid/images # 검증 데이터 경로
+test: ./data/test/images # 테스트 데이터 경로 (선택 사항)
+
+# 클래스 개수 설정
+nc: 3 # 클래스 개수 (예: 3개 클래스)
+# 클래스 이름 정의
+names: ['person', 'car', 'dog']
