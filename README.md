@@ -12,7 +12,10 @@
 <br>
 
 ## 📝 프로젝트 소개
-이 프로젝트는 **Roboflow 데이터셋**을 활용하여 YOLO 기반의 객체 탐지 모델을 구축하고 실습하는 과정입니다. <br>현재 **Week 3 (w3)** 단계인 모델링 및 추론 최적화를 진행하고 있습니다.
+이 프로젝트는 **Roboflow 데이터셋**을 활용하여 YOLO 기반의 객체 탐지 모델을 구축하고 실습하는 과정입니다. 
+<br> RoboFlow는 다양한 AI 학습 데이터를 지원하는 플랫폼입니다.
+<br> 해당 프로젝트는 RoboFLow의 방대한 데이터 허브, 실시간 데이터 증강, 원활한 워크플로우 등 강력한 장점을 이용하여 학습데이터를 확보했습니다.
+<br>현재 **Week 3 (w3)** 단계인 모델링 및 추론 최적화를 진행하고 있습니다.
 
 <br>
 
@@ -54,17 +57,24 @@ python w3/src/YOLOv8_Object_Direction.py
 <div align="center">
   <table>
     <tr>
-      <td><img width="858" height="733" alt="스크린샷 2026-01-26 011127" src="https://github.com/user-attachments/assets/2d92a754-aea7-48e9-9cfe-afd07ac54d98" /></td>
-      <td><img width="640" height="534" alt="스크린샷 2026-01-25 194843" src="https://github.com/user-attachments/assets/e02b2b45-8f14-4b08-a276-5f9bc77fe1ad" /></td>
-      <td><img width="922" height="918" alt="스크린샷 2026-01-26 012223" src="https://github.com/user-attachments/assets/5f734525-bcbe-47f8-b689-de4f45ead1a9" /><div align="center"></td>
+      <td><img src="https://github.com/user-attachments/assets/2d92a754-aea7-48e9-9cfe-afd07ac54d98" width="400" /></td>
+      <td><img src="https://github.com/user-attachments/assets/e02b2b45-8f14-4b08-a276-5f9bc77fe1ad" width="400" /></td>
     </tr>
     <tr align="center">
-      <td>w3/data에 저장된 RoboFlow 데이터셋</td>
-      <td>Object_Direction된 모습</td>
-      <td>데이터 증강이 적용된 모습</td>
+      <td><b>w3/data에 저장된 RoboFlow 데이터셋</b></td>
+      <td><b>Object Detection 결과</b></td>
+    </tr>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/5f734525-bcbe-47f8-b689-de4f45ead1a9" width="400" /></td>
+      <td><img src="https://github.com/user-attachments/assets/2d76622c-0507-4732-b195-b9aa8e823c61" width="400" /></td>
+    </tr>
+    <tr align="center">
+      <td><b>데이터 증강(Augmentation) 적용</b></td>
+      <td><b>성능 시각화 지원</b></td>
     </tr>
   </table>
 </div>
+
 
 <br>
 
