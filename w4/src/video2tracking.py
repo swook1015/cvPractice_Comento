@@ -25,7 +25,7 @@ analysis_time = datetime.now().strftime("%m%d_%H%M%S")
 output_name = f"analysis_{analysis_time}"
 
 # 3. 영상 설정
-video_path = "w4/data/video/Test.mp4"
+video_path = "w4/data_video/Input.mp4"
 cap = cv2.VideoCapture(video_path)
 window_name = "Safety Intelligence Dashboard"
 cv2.namedWindow(window_name, cv2.WINDOW_NORMAL)
