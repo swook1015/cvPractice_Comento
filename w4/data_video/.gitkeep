@@ -1,17 +1,10 @@
 #사용자 설정
-# 1. 데이터 폴더 (폴더 전체 무시)
 w4/data/
-w4/data_video/*
-!w4/data_video/.gitkeep
-
-# 2. 결과물 폴더 (구조는 유지하고 내용만 무시)
-w4/output/*
-!w4/output/.gitkeep
-
-# 3. 모델 및 로그 파일
+w4/test/test_data/
+w4/output/
+w4/test/test_output/
 runs/
 *.pt
-*.mp4
 
 # Created by https://www.toptal.com/developers/gitignore/api/python,windows,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,windows,visualstudiocode
