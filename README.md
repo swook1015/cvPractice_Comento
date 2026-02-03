@@ -28,8 +28,7 @@
 | :---: | :---: |
 | <img width="350" height="350" alt="스크린샷 2026-02-03 185940" src="https://github.com/user-attachments/assets/34a98cb5-1cba-4b4b-9910-fc724d04382e" /> | <img width="350" height="350" alt="스크린샷 2026-02-03 185933" src="https://github.com/user-attachments/assets/22d0b1fe-21dd-4aee-bb77-2aa6afe1188d" />
  |
-| **비율 기반 분석 ($AR > 1.2$)** | **실시간 경로 추적 및 시각화** |
-| 객체의 가로/세로 비율 변화를 실시간으로 <br> 계산하여 낙상 사고를 즉각 감지합니다. | ByteTrack과 이동 평균 필터를 결합하여 <br> 정밀한 동선 추적 및 히트맵을 생성합니다. |
+
 
 
 ### 1. 쓰러짐 감지 로직 (Fall Detection)
