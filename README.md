@@ -27,7 +27,6 @@
 | **낙상 감지 알고리즘 (Safety)** | **동선 및 히트맵 분석 (Flow)** |
 | :---: | :---: |
 | <img width="350" height="350" alt="스크린샷 2026-02-03 185940" src="https://github.com/user-attachments/assets/34a98cb5-1cba-4b4b-9910-fc724d04382e" /> | <img width="350" height="350" alt="스크린샷 2026-02-03 185933" src="https://github.com/user-attachments/assets/22d0b1fe-21dd-4aee-bb77-2aa6afe1188d" />
- |
 
 
 
